@@ -1,7 +1,7 @@
 body {
-  background-image: url("/images/bg2.jpeg");
-  background-size: cover;
-  font-family: 'Poiret One';
+  background-color: black;
+  background-size: cotain;
+  font-family: 'Audiowide', cursive;
 	margin: 0;
   text-align: center;
   color: white;
@@ -10,7 +10,26 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+}
+
+.header1 {
+  margin-bottom: 0;
+  background: linear-gradient(-45deg, #d7108e, #8300fe, #042fef, #f75d04);
+	background-size: 300%;
+	font-size: 6vw;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 2s ease-in-out infinite;
+	-moz-animation: animated_text 5s ease-in-out infinite;
+	-webkit-animation: animated_text 5s ease-in-out infinite;
+}
+
+@keyframes animated_text {
+	0% { background-position: 0px 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0px 50%; }
 }
 
 section.board {
@@ -20,12 +39,23 @@ section.board {
   grid-gap: 1vmin;
   top: 10%;
   justify-content: center;
+  border-radius: 5%;;
+
+
+  box-shadow:
+  inset 0 0 50px #fff,      
+  inset 20px 0 80px rgb(247, 5, 166),   
+  inset -20px 0 80px rgb(215, 104, 6),  
+  inset 20px 0 300px rgb(233, 47, 153),  
+  inset -20px 0 300px rgb(216, 12, 234), 
+  0 0 50px #fff,            
+  -10px 0 80px #f0f,        
+  10px 0 80px rgb(255, 255, 255);  
 }
 
 div {
   border: 3px solid white;
   border-radius: 10%;
-  box-shadow: 2px 4px green;
   font-size: 8vmin;
   text-align: center;
   vertical-align: middle;
@@ -35,22 +65,15 @@ div {
 #reset-button {
   width: 100px;
   height: 50px;
-  background-color: blue;
   color: white;
   font-weight: bold;
   font-size: 15px;
-  margin: 20px;
-  font-family: 'Poiret One', cursive;
-}
+  margin: 0 0 25px 0;
 
-#reset-button:hover {
-  font-weight: bold;
-  background-color: grey;
-  color: white;
-  transition: background-color .2s;
 }
 
 #message {
-  margin: 1px;
-  color: red;
+  margin: 0 0 20px 0;
+  color: white;
+  font-size: 4vh;
 }
