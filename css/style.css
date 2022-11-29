@@ -59,7 +59,7 @@ div {
   font-size: 8vmin;
   text-align: center;
   vertical-align: middle;
-  justify-content: right;
+  justify-content: center;
 }
 
 #reset-button {
@@ -76,4 +76,36 @@ div {
   margin: 0 0 20px 0;
   color: white;
   font-size: 4vh;
+}
+
+ul {
+  margin-top: -.5em;
+  padding: 0;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 2vh;
+}
+
+.navContainer > a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+
+ul li{
+  list-style:none;
+  margin:0 15px;
+  transition:0.5s;
+}
+
+ul li a{
+  display: block;
+  position:relative;
+  text-decoration:none;
+  color:#fff;
+}
+
+h4 {
+  margin-top: 30px;
 }
