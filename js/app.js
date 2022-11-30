@@ -1,5 +1,6 @@
 /*----------------------- Constants --------------------------------*/
 
+const buttonSound = new Audio("../audio/button-sound.wav")
 const winningCombos = [[0, 1, 2],[3, 4, 5],[6, 7, 8],[0, 3, 6],[1, 4, 7],[2, 5, 8],[0, 4, 8],[2, 4, 6]];
 
 
@@ -12,6 +13,7 @@ const squareEls = document.querySelectorAll(".board > div")
 const messageEl = document.querySelector("#message")
 const boardEl = document.querySelector(".board")
 const resetBtnEl = document.querySelector("#reset-button")
+const soundEls = document.querySelector(".board > div")
 
 /*----------------------- Event Listeners -----------------------------*/
 
@@ -40,17 +42,22 @@ function render(){
   })
   if (winner === null){
     if (turn === 1){
-      messageEl.textContent = "Player 1: It's time to play!"
+      messageEl.textContent = "PLAYER 1: IT'S TIME TO PLAY!"
     } else {
-      messageEl.textContent = "Player 2: It's time to play!"
+      messageEl.textContent = "PLAYER 2: IT'S TIME TO PLAY!"
     }
+    setTimeout(function(){
+      buttonSound.play()
+      })
   }
   else if (winner === "T") {
-    messageEl.textContent = "It's a tie!"
+    messageEl.textContent = "IT'S A TIE"
   } else if (winner === 1) {
-    messageEl.textContent = "CONGRATS! Player 1 wins the game!"
+    messageEl.textContent = "CONGRATS! PLAYER 1 WINS THE GAME!"
+    messageEl.className = "animate__animated animate__wobble"
   } else if (winner === -1) {
-    messageEl.textContent = "CONGRATS! Player 2 wins the gane!"
+    messageEl.textContent = "CONGRATS! PLAYER 2 WINS THE GAME!"
+    messageEl.className = "animate__animated animate__wobble"
   }
 }
 

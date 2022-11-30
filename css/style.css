@@ -45,7 +45,7 @@ section.board {
   box-shadow:
   inset 0 0 50px #fff,      
   inset 20px 0 80px rgb(247, 5, 166),   
-  inset -20px 0 80px rgb(215, 104, 6),  
+  inset -20px 0 50px rgb(215, 104, 6),  
   inset 20px 0 300px rgb(233, 47, 153),  
   inset -20px 0 300px rgb(216, 12, 234), 
   0 0 50px #fff,            
@@ -75,7 +75,8 @@ div {
 #message {
   margin: 0 0 20px 0;
   color: white;
-  font-size: 4vh;
+  font-size: 2vh;
+  font-family: 'Montserrat', sans-serif;
 }
 
 ul {
@@ -85,6 +86,7 @@ ul {
   display: flex;
   align-items: center;
   font-size: 2vh;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navContainer > a {
@@ -107,5 +109,7 @@ ul li a{
 }
 
 h4 {
-  margin-top: 30px;
+  margin-top: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2vh;
 }
