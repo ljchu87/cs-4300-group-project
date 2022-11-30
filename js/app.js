@@ -52,6 +52,7 @@ function render(){
   }
   else if (winner === "T") {
     messageEl.textContent = "IT'S A TIE"
+    messageEl.className = "animate__animated animate__wobble"
   } else if (winner === 1) {
     messageEl.textContent = "CONGRATS! PLAYER 1 WINS THE GAME!"
     messageEl.className = "animate__animated animate__wobble"
