@@ -93,6 +93,7 @@ ul {
   text-decoration: none;
   color: white;
   margin: 0 10px;
+
 }
 
 ul li{
@@ -106,6 +107,8 @@ ul li a{
   position:relative;
   text-decoration:none;
   color:#fff;
+  font-size: 1.5vh;
+  
 }
 
 h4 {
