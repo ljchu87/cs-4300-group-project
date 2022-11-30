@@ -40,8 +40,6 @@ section.board {
   top: 10%;
   justify-content: center;
   border-radius: 5%;;
-
-
   box-shadow:
   inset 0 0 50px #fff,      
   inset 20px 0 80px rgb(247, 5, 166),   
@@ -120,5 +118,13 @@ ul li a{
 h4 {
   margin-top: 100px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 2vh;
+  font-size: 2.5vh;
+  background: linear-gradient(-45deg, #d7108e, #8300fe, #042fef, #f75d04);
+	background-size: 300%;
+	text-transform: uppercase;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 2s ease-in-out infinite;
+	-moz-animation: animated_text 5s ease-in-out infinite;
+	-webkit-animation: animated_text 5s ease-in-out infinite;
 }
