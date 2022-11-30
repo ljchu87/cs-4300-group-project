@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   background-size: cotain;
   font-family: 'Audiowide', cursive;
 	margin: 0;
@@ -36,7 +36,7 @@ section.board {
   display: grid;
   grid-template-rows: repeat(3, 15vmin);
   grid-template-columns: repeat(3, 15vmin);
-  grid-gap: 1vmin;
+  grid-gap: .2vmin;
   top: 10%;
   justify-content: center;
   border-radius: 5%;;
@@ -127,4 +127,9 @@ h4 {
 	animation: animated_text 2s ease-in-out infinite;
 	-moz-animation: animated_text 5s ease-in-out infinite;
 	-webkit-animation: animated_text 5s ease-in-out infinite;
+}
+
+ul > li > a:hover{
+  color:rgb(24, 5, 231);
+  text-decoration: none;
 }
